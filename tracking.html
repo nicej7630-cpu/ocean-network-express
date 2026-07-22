@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Shipment - Ocean Network Express</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(rgba(0,40,80,.7),rgba(0,40,80,.7)),
+url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+color:white;
+}
+
+.container{
+max-width:700px;
+margin:60px auto;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:20px;
+}
+
+input{
+width:100%;
+padding:15px;
+margin:15px 0;
+border:none;
+border-radius:10px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#00a8ff;
+color:white;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0088cc;
+}
+
+.status{
+margin-top:30px;
+background:white;
+color:#333;
+padding:20px;
+border-radius:15px;
+}
+
+a{
+color:white;
+text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚢 Track Your Shipment</h1>
+
+<p>Enter your tracking number below.</p>
+
+<input type="text" placeholder="Tracking Number (Example: ONE100245)">
+
+<button>Track Shipment</button>
+
+<div class="status">
+
+<h2>Shipment Status</h2>
+
+<p><strong>Tracking ID:</strong> ONE100245</p>
+
+<p><strong>Status:</strong> In Transit 🚚</p>
+
+<p><strong>Current Location:</
