@@ -1,1 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Ocean Network Express</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:
+linear-gradient(rgba(0,40,80,.65),rgba(0,40,80,.65)),
+url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+}
+
+.login-box{
+width:360px;
+background:rgba(255,255,255,.15);
+backdrop-filter:blur(12px);
+padding:35px;
+border-radius:20px;
+color:white;
+text-align:center;
+}
+
+.login-box h1{
+margin-bottom:10px;
+}
+
+.login-box p{
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:15px;
+background:#00a8ff;
+border:none;
+border-radius:30px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+button:hover{
+background:#0088cc;
+}
+
+a{
+color:#ffffff;
+text-decoration:none;
+}
+
+.back{
+display:block;
+margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>🚢 Ocean Network Express</h1>
+
+<p>Customer Login</p>
+
+<form action="admin.html">
+
+<input type="text" placeholder="Username" required>
+
+<input type="password" placeholder="Password" required>
+
+<label>
+<input type="checkbox">
+ Remember Me
+</label>
+
+<br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+<p style="margin-top:15px;">
+<a href="#">Forgot Password?</a>
+</p>
+
+<a class="back" href="index.html">⬅ Back to Home</a>
+
+</div>
+
+</body>
+</html>
