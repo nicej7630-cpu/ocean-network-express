@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Track Shipment - Ocean Network Express</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="style.css">
+
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
 
-body{
-background:linear-gradient(rgba(0,40,80,.7),rgba(0,40,80,.7)),
-url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80');
-background-size:cover;
-background-position:center;
-color:white;
-}
-
-.container{
+.track-box{
 max-width:700px;
-margin:60px auto;
-background:rgba(255,255,255,.15);
-backdrop-filter:blur(10px);
-padding:30px;
-border-radius:20px;
+margin:auto;
+background:white;
+padding:35px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-input{
+.track-box input{
 width:100%;
 padding:15px;
 margin:15px 0;
-border:none;
-border-radius:10px;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
 }
 
-button{
+.track-box button{
 width:100%;
 padding:15px;
-background:#00a8ff;
+background:#003b73;
 color:white;
 border:none;
 border-radius:30px;
@@ -51,43 +45,104 @@ font-size:18px;
 cursor:pointer;
 }
 
-button:hover{
-background:#0088cc;
+.result{
+margin-top:30px;
+padding:25px;
+background:#eef7ff;
+border-radius:10px;
 }
 
 .status{
-margin-top:30px;
-background:white;
-color:#333;
-padding:20px;
-border-radius:15px;
+color:green;
+font-weight:bold;
+font-size:18px;
 }
 
-a{
-color:white;
-text-decoration:none;
-}
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<header>
 
-<h1>🚢 Track Your Shipment</h1>
+<div class="logo">🚢 Ocean Network Express</div>
 
-<p>Enter your tracking number below.</p>
+<nav>
 
-<input type="text" placeholder="Tracking Number (Example: ONE100245)">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="tracking.html">Tracking</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Track Your Shipment</h1>
+
+<p>Enter your tracking number to view the latest shipment status.</p>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="track-box">
+
+<h2>Shipment Tracking</h2>
+
+<input type="text" placeholder="Example: ONE100245">
 
 <button>Track Shipment</button>
 
-<div class="status">
+<div class="result">
 
-<h2>Shipment Status</h2>
+<h3>Tracking Result</h3>
 
-<p><strong>Tracking ID:</strong> ONE100245</p>
+<p><strong>Tracking Number:</strong> ONE100245</p>
 
-<p><strong>Status:</strong> In Transit 🚚</p>
+<p><strong>Status:</strong> <span class="status">In Transit 🚢</span></p>
 
-<p><strong>Current Location:</
+<p><strong>Current Location:</strong> Rotterdam Port</p>
+
+<p><strong>Destination:</strong> Lagos, Nigeria</p>
+
+<p><strong>Estimated Delivery:</strong> 30 July 2026</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>Ocean Network Express</h2>
+
+<p>Global Shipping • Logistics • Freight Forwarding</p>
+
+<br>
+
+<p>
+📍 Singapore |
+📞 +65 1434 5778 |
+📧 oceannet.epr@gmail.com
+</p>
+
+<br>
+
+<p>© 2026 Ocean Network Express. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
