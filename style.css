@@ -107,3 +107,14 @@ footer{
     padding:30px;
     margin-top:50px;
 }
+.why-us{
+padding:70px 8%;
+background:#eef7ff;
+text-align:center;
+}
+
+.why-us h2{
+margin-bottom:30px;
+font-size:36px;
+color:#003b73;
+}
