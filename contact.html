@@ -1,40 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contact Us - Ocean Network Express</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="style.css">
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
-body{background:#f4f8fb;}
 
-header{
-background:#003b73;
-color:#fff;
-text-align:center;
-padding:25px;
-}
-
-.container{
-max-width:1000px;
-margin:40px auto;
-padding:20px;
+.contact{
 display:grid;
-grid-template-columns:1fr 1fr;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:30px;
 }
 
-.info,.form{
+.box{
 background:#fff;
 padding:30px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
+box-shadow:0 8px 20px rgba(0,0,0,.1);
 }
 
-input,textarea{
+input,
+textarea{
 width:100%;
 padding:15px;
 margin:10px 0;
@@ -47,80 +43,103 @@ height:150px;
 }
 
 button{
-background:#00a8ff;
-color:#fff;
-border:none;
-padding:15px;
 width:100%;
+padding:15px;
+background:#003b73;
+color:white;
+border:none;
 border-radius:30px;
+font-size:18px;
 cursor:pointer;
 }
 
 button:hover{
-background:#0088cc;
+background:#00539f;
 }
 
-.footer{
-text-align:center;
-padding:20px;
-background:#003b73;
-color:#fff;
-margin-top:40px;
-}
-
-a{
-color:#003b73;
-text-decoration:none;
-}
 </style>
+
 </head>
 
 <body>
 
 <header>
-<h1>📞 Contact Ocean Network Express</h1>
+
+<div class="logo">🚢 Ocean Network Express</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="tracking.html">Tracking</a>
+<a href="booking.html">Booking</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login</a>
+
+</nav>
+
 </header>
 
-<div class="container">
+<section class="hero">
 
-<div class="info">
-<h2>Our Office</h2>
+<div>
 
-<p><strong>📍 Address:</strong><br>
-1 Marina Boulevard,<br>
-Singapore</p>
+<h1>Contact Ocean Network Express</h1>
 
-<br>
-
-<p><strong>☎ Phone:</strong><br>
-+65 1234 5678</p>
-
-<br>
-
-<p><strong>📧 Email:</strong><br>
-info@oceannetworkexpress.com</p>
-
-<br>
-
-<p><strong>🌍 Business Hours:</strong><br>
-Monday - Friday<br>
-8:00 AM - 6:00 PM</p>
+<p>We're here to help with your shipping and logistics needs.</p>
 
 </div>
 
-<div class="form">
+</section>
 
-<h2>Send Us a Message</h2>
+<section>
+
+<div class="contact">
+
+<div class="box">
+
+<h2>Contact Information</h2>
+
+<p><strong>📍 Head Office</strong></p>
+
+<p>Singapore</p>
+
+<br>
+
+<p><strong>📞 Phone</strong></p>
+
+<p>+65 1434 5778</p>
+
+<br>
+
+<p><strong>📧 Email</strong></p>
+
+<p>oceannet.epr@gmail.com</p>
+
+<br>
+
+<p><strong>🕒 Office Hours</strong></p>
+
+<p>Monday - Friday</p>
+
+<p>8:00 AM - 6:00 PM</p>
+
+</div>
+
+<div class="box">
+
+<h2>Send a Message</h2>
 
 <form>
 
-<input type="text" placeholder="Full Name" required>
+<input type="text" placeholder="Full Name">
 
-<input type="email" placeholder="Email Address" required>
+<input type="email" placeholder="Email Address">
 
 <input type="text" placeholder="Subject">
 
-<textarea placeholder="Write your message..."></textarea>
+<textarea placeholder="Write your message here..."></textarea>
 
 <button>Send Message</button>
 
@@ -130,9 +149,27 @@ Monday - Friday<br>
 
 </div>
 
-<div class="footer">
-© 2026 Ocean Network Express
-</div>
+</section>
+
+<footer>
+
+<h2>Ocean Network Express</h2>
+
+<p>Global Shipping • Logistics • Freight Forwarding</p>
+
+<br>
+
+<p>
+📍 Singapore |
+📞 +65 1434 5778 |
+📧 oceannet.epr@gmail.com
+</p>
+
+<br>
+
+<p>© 2026 Ocean Network Express. All Rights Reserved.</p>
+
+</footer>
 
 </body>
 </html>
