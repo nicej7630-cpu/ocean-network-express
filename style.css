@@ -6,39 +6,44 @@
 }
 
 body{
-    background:#f4f8fb;
+    background:#f5f8fc;
     color:#222;
+    line-height:1.6;
 }
 
 header{
+    position:fixed;
+    top:0;
+    width:100%;
     background:#003b73;
-    color:white;
+    color:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 8%;
+    padding:18px 8%;
+    z-index:1000;
 }
 
 .logo{
-    font-size:28px;
+    font-size:30px;
     font-weight:700;
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
     margin-left:20px;
-    font-weight:500;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#4fc3f7;
+    color:#00c6ff;
 }
 
 .hero{
-    height:90vh;
+    height:100vh;
     background:
-    linear-gradient(rgba(0,40,80,.55),rgba(0,40,80,.55)),
+    linear-gradient(rgba(0,45,90,.55),rgba(0,45,90,.55)),
     url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80");
     background-size:cover;
     background-position:center;
@@ -49,72 +54,52 @@ nav a:hover{
     color:white;
 }
 
-.hero-content h1{
-    font-size:56px;
-    margin-bottom:20px;
+.hero h1{
+    font-size:60px;
 }
 
-.hero-content p{
-    font-size:20px;
-    margin-bottom:30px;
+.hero p{
+    font-size:22px;
+    margin:20px 0;
 }
 
 .btn{
     display:inline-block;
     padding:15px 35px;
-    margin:10px;
     background:#00a8ff;
     color:white;
     text-decoration:none;
     border-radius:40px;
+    margin:10px;
     transition:.3s;
 }
 
 .btn:hover{
-    background:#0091ea;
-    transform:translateY(-3px);
+    background:#0088cc;
 }
 
-.services,
-.stats{
-    padding:70px 8%;
-    text-align:center;
+section{
+    padding:80px 8%;
 }
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:25px;
-    margin-top:40px;
+    margin-top:30px;
 }
 
 .card{
     background:white;
-    border-radius:15px;
     padding:30px;
-    box-shadow:0 10px 25px rgba(0,0,0,.1);
-}
-
-.card h1{
-    font-size:48px;
-    margin-bottom:15px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    text-align:center;
 }
 
 footer{
-    background:#003b73;
+    background:#002b5c;
     color:white;
+    padding:50px 8%;
     text-align:center;
-    padding:30px;
-    margin-top:50px;
-}
-.why-us{
-padding:70px 8%;
-background:#eef7ff;
-text-align:center;
-}
-
-.why-us h2{
-margin-bottom:30px;
-font-size:36px;
-color:#003b73;
 }
